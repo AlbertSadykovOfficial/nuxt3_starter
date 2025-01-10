@@ -1,0 +1,12 @@
+# exclude everything
+logs/*
+
+# exception to the rule
+!logs/.gitkeep
+
+.env
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride

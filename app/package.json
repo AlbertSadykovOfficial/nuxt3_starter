@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.7.5",
+    "eslint": "^9.17.0",
+    "nuxt": "^3.15.1",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vue-tsc": "^2.1.10"
+  }
+}

@@ -1,0 +1,9 @@
+version: "3"
+services:
+  nuxt:
+    container_name: nuxt3_typescript_eslint_starter
+    build:
+      context: .
+    ports:
+      - "${EXTERNAL_NUXT_PORT}:3000"
+    restart: always
