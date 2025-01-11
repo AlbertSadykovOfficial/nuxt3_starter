@@ -24,6 +24,9 @@ export default defineNuxtConfig({
         stylistic: true,
       },
     }],
+
+    // https://nuxt.com/modules/pinia
+    '@pinia/nuxt',
   ],
 
   /* --- Typescript Module --- */
