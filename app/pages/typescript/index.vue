@@ -20,6 +20,7 @@
 </template>
 
 <script lang="ts" setup>
+// https://nuxt.com/docs/guide/concepts/typescript
 interface ToDo {
   userId: number
   id: number

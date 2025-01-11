@@ -15,14 +15,19 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    // https://eslint.nuxt.com/packages/module
     ['@nuxt/eslint', {
       config: {
+        // Форматирование стилей
+        // Cм. дефолтные настройки ESLint
+        // https://eslint.style/guide/config-presets#configuration-factory
         stylistic: true,
       },
     }],
   ],
 
   /* --- Typescript Module --- */
+  // https://nuxt.com/docs/guide/concepts/typescript
   typescript: {
     // Показывать ошибки в Runtime
     typeCheck: true,

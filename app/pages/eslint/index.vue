@@ -5,6 +5,7 @@
 </template>
 
 <script lang="ts" setup>
+// https://eslint.nuxt.com/packages/module
 /*
   ESLint Test
   Можно попробовать исправить код, поставить отступы,
