@@ -27,6 +27,13 @@ export default defineNuxtConfig({
 
     // https://nuxt.com/modules/pinia
     '@pinia/nuxt',
+
+    // https://nuxt.com/docs/getting-started/testing
+    // Добавить Vitest integration в Nuxt DevTools для добавления тестов в development
+    '@nuxt/test-utils/module',
+
+    // https://nuxt.com/modules/tailwindcss
+    '@nuxtjs/tailwindcss'
   ],
 
   /* --- Typescript Module --- */
