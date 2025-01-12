@@ -18,7 +18,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   test: {
-    // Окружение в котором будет выполнятся тестирование
+    // Окружение в котором будет выполнятся тестирование для всех по-умолчанию
     environment: 'happy-dom',
   },
 });
