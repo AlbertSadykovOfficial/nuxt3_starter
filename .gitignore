@@ -1,6 +1,7 @@
 # exclude everything
 logs/*
 .idea
+.vscode
 # exception to the rule
 !logs/.gitkeep
 
