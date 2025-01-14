@@ -2,8 +2,15 @@ version: "3"
 services:
   nuxt:
     container_name: nuxt3_typescript_eslint_starter
-    build:
-      context: .
+    build: .
+    env_file:
+      - .env
+    environment:
+      - HOST=0.0.0.0 # ! Обязательно, иначе не пробрасываются порты
     ports:
       - "${EXTERNAL_NUXT_PORT}:3000"
+    volumes:
+      - "./app:/app/"
+      - "./logs:/root/.npm/_logs"
     restart: always
+    command: bash -c "npm run start"

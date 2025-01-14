@@ -11,21 +11,6 @@ WORKDIR /app
 # Build
 FROM base as build
 
-COPY --link ./app/package.json ./app/package-lock.json .
-RUN npm install
+RUN npm cache clear --force
 
-COPY --link ./app/ .
-
-RUN npm run build
-
-# Run
-FROM base
-
-ENV PORT=$PORT
-ENV NODE_ENV=production
-
-COPY --from=build /app/.output /app/.output
-# Optional, only needed if you rely on unbundled dependencies
-# COPY --from=build /app/node_modules /app/node_modules
-
-CMD [ "node", ".output/server/index.mjs" ]
+EXPOSE ${PORT}
