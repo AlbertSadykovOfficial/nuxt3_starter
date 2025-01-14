@@ -7,9 +7,12 @@
     '~/plugins/bar/baz'
   ]
  */
-import { defineNuxtPlugin } from '@nuxtjs/composition-api'
 import * as Constants from '@/constants/'
 
-export default defineNuxtPlugin((_, inject) => {
-  inject('CONSTANTS', Constants)
+export default defineNuxtPlugin(() => {
+  return {
+    provide: {
+      CONSTANTS: Constants
+    }
+  }
 })

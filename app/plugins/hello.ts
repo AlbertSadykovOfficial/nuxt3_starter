@@ -8,8 +8,6 @@
     '~/plugins/bar/baz'
   ]
  */
-import { defineNuxtPlugin } from '@nuxtjs/composition-api'
-
 export default defineNuxtPlugin({
   name: 'my-plugin',
   enforce: 'pre', // or 'post'
