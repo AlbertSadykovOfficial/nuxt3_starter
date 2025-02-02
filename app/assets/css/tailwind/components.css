@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .form-input {
+    @apply py-3 px-4 placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-gray-200 bg-white text-gray-700 focus:border-orange-400 focus:outline-none focus:ring focus:ring-1 focus:ring-orange-500 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-orange-300;
+  }
+}

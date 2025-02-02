@@ -1,18 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-
-  devtools: {
-    enabled: true
-  },
-
-  vite: {
-    // Удаление консоли из билда
-    esbuild: {
-      drop: ['debugger'],
-      pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
-    }
-  },
 
   modules: [
     // https://eslint.nuxt.com/packages/module
@@ -33,8 +20,36 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
 
     // https://nuxt.com/modules/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
+  /* --- Typescript Module --- */
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Компоненты в указанных директориях будут видны в глобальном пространстве
+  components: [
+    '~/components/core/Basic',
+    '~/components/core/Fields',
+    '~/components/core/Modals',
+  ],
+
+  devtools: {
+    enabled: true,
+  },
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: [
+    // tailwind
+    '@/assets/css/tailwind/index.css',
+  ],
+  compatibilityDate: '2024-11-01',
+
+  vite: {
+    // Удаление консоли из билда
+    esbuild: {
+      drop: ['debugger'],
+      pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
+    },
+  },
 
   /* --- Typescript Module --- */
   // https://nuxt.com/docs/guide/concepts/typescript
@@ -44,5 +59,4 @@ export default defineNuxtConfig({
     // Строгий режим
     // Можно выключить при миграции кодовой базы на Typescript
     strict: true,
-  }, /* --- Typescript Module --- */
-})
+  } })

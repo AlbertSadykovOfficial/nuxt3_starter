@@ -1,6 +1,7 @@
 <template>
   <div>
     ESLint Test
+    <div>Var: {{ s }}</div>
   </div>
 </template>
 
@@ -9,9 +10,8 @@
 /*
   ESLint Test
   Можно попробовать исправить код, поставить отступы,
-  ESLint все исправит по команде nm run lint:fix
+  ESLint все исправит по команде npm run lint:fix
 */
- const s = 21
-    console.log('asdsadas')
-
+const s = 21
+console.log('asdsadas')
 </script>

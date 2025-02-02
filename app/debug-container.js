@@ -1,4 +1,4 @@
-function debug () {
+function debug() {
   setTimeout(debug, 100000000)
 }
 

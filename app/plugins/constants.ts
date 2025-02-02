@@ -1,5 +1,5 @@
-/*
-  https://nuxt.com/docs/guide/directory-structure/plugins
+/**
+  @see https://nuxt.com/docs/guide/directory-structure/plugins
 
   Плагин автоматически будет загружен из этого каталога
   Но каталоги не поддерживают автоимпорт, их требуется импортровать вручную
@@ -12,7 +12,7 @@ import * as Constants from '@/constants/'
 export default defineNuxtPlugin(() => {
   return {
     provide: {
-      CONSTANTS: Constants
-    }
+      CONSTANTS: Constants,
+    },
   }
 })
