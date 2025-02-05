@@ -2,12 +2,14 @@
   <div
     @scroll="scroll"
   >
+    <!-- SEARCH BOX -->
     <div>
       <input
         v-model="filter"
         type="text"
       >
     </div>
+    <!-- LIST -->
     <div
       v-for="item in list"
       :key="item.id"
@@ -31,6 +33,9 @@
 <script setup lang="ts">
 import { debounce } from '@/utils/debounce'
 
+// ======================= //
+//    Types Declaration    //
+// ======================= //
 /**
  * @typedef TItem
  * @type {object}
