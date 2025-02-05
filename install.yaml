@@ -1,4 +1,3 @@
-version: '2'
 services:
   nuxt_install_and_build:
     build: .
