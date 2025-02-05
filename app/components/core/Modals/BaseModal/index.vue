@@ -79,7 +79,8 @@ watch(show, (value: boolean) => {
     emit('update:modelValue', show.value)
     if (show.value) {
       emit('open')
-    } else {
+    }
+    else {
       emit('close')
     }
   }
