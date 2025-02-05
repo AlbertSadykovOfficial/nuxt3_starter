@@ -1,51 +1,22 @@
 # Nuxt 3 starter (with: eslint / typescript / pinia / tailwind)
 (Nuxt3 nuxt eslint typescript pinia tailwind starter project)
 
-## Начало работы
+Для запуска минуя Docker, читайте README.md в каталоге (app/README.md)
 
-Запуск сервера разработки:
-
+## Запуск
+### Скопировать файл шаблона пеерменных окружения и указать в новом файле порты
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env
 ```
-
-Открыть [http://localhost:3000](http://localhost:3000) в браузере.
-
-## Проверка типов
+### Установка зависимостей и билд
 ```bash
-# Проверка
-npm run lint
-
-# Исправление
-npm run lint:fix
+docker-compose -f install.yaml up
 ```
-
-## Проверка стиля кода
+### Development
 ```bash
-# Проверка
-npm run lint
-
-# Исправление
-npm run lint:fix
+docker-compose -f docker-compose.dev.yaml up
 ```
-
-## Проверка типов в режиме реального времени
+### Production
 ```bash
-npm run ts-lint
+docker-compose -f docker-compose.yaml up -d
 ```
-
-## Узнать больше
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
---
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
