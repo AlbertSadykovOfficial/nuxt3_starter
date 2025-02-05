@@ -9,7 +9,8 @@ services:
     ports:
       - "${EXTERNAL_NUXT_PORT}:3000"
     volumes:
-      - "./app:/app/"
+      - "./app/.output/:/app/.output/"
+      - "./app/package.json:/app/package.json"
       - "./logs:/root/.npm/_logs"
     restart: always
     command: bash -c "npm run start"
