@@ -5,6 +5,7 @@
   >
     Library
   </h1>
+  <!-- BUTTONS -->
   <section class="grid gap-4 p-5 border-t">
     <h2 class="text-2xl font-bold">
       Кнопки
@@ -33,6 +34,7 @@
       </Button>
     </div>
   </section>
+  <!-- FIELDS -->
   <section class="grid gap-4 p-5 border-t">
     <h2 class="text-2xl font-bold">
       Fields
@@ -65,6 +67,7 @@
       </div>
     </div>
   </section>
+  <!-- MODALS -->
   <section class="grid gap-4 p-5 border-t">
     <h2 class="text-2xl font-bold">
       Модальные окна

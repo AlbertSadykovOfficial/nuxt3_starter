@@ -1,4 +1,5 @@
 <template>
+  <!-- Link Card -->
   <div class="relative flex items-center justify-between gap-2 rounded-xl border border-gray-200 bg-white p-3 max-w-full shadow-none drop-shadow-sm">
     <div class="flex min-w-0 items-center gap-x-3">
       <div class="flex-none rounded-full border border-gray-200 bg-gradient-to-t from-gray-100 p-2">
