@@ -15,5 +15,5 @@
 export const round = (num: string | number | undefined | null): string => {
   if (!num) return ''
 
-  return `${Math.round(Number(num) * 100) / 100}`
+  return `${Math.round(Math.round(Number(num) * 100) / 100)}`
 }
