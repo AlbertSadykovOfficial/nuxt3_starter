@@ -31,29 +31,19 @@
               @click="(e: Event) => emit('copy', e)"
             >
               <span class="sr-only">Copy</span>
-              <Icon
-                icon="IconCopy"
-                class="w-4 h-4"
-              />
+              CP
             </button>
             <button
               class="group rounded-full border border-gray-200 bg-gray-50 p-1.5 transition-all duration-75 hover:bg-gray-100 focus:outline-none"
               @click="(e: Event) => emit('qr', e)"
             >
               <span class="sr-only">Show QR Code</span>
-              <Icon
-                icon="IconQrcode"
-                class="w-4 h-4"
-              />
+              QR
             </button>
           </div>
         </div>
         <div class="flex items-center gap-1">
-          <Icon
-            icon="IconCornerDownRight"
-            stroke="1.25"
-            class="h-4 w-4 text-gray-400"
-          />
+          -
           <a
             :href="link"
             target="_blank"
@@ -68,10 +58,7 @@
     <div class="flex items-center gap-2">
       <div class="block rounded-md border border-gray-200 bg-gray-50 transition-colors hover:bg-gray-100">
         <div class="flex items-center justify-center gap-1 px-1 py-[0.2rem] xs:px-2 sm:px-3">
-          <Icon
-            icon="IconClick"
-            class="h-4 w-4 text-gray-700"
-          />
+          K
           <div class="flex items-center whitespace-nowrap text-sm text-gray-500">
             {{ click_counter }}
             <!--
@@ -86,10 +73,7 @@
         @click="(e) => emit('edit', e)"
       >
         <span class="sr-only">Edit</span>
-        <Icon
-          icon="IconDotsVertical"
-          class="h-5 w-5 text-gray-500"
-        />
+        S
       </button>
     </div>
   </div>
