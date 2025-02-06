@@ -1,10 +1,7 @@
-// @vitest-environment happy-dom
-// Строка выше устанавливает окружение в котором будут запущены тесты,
-// В данном случае Нужен Happy Dom, чтоб все корректно отработало
-import { describe, it, expect } from 'vitest'
-import { shallowMount } from '@vue/test-utils'
+// import { shallowMount } from '@vue/test-utils'
+import { it, describe, expect, shallowMount } from '@/tests/utils/index'
 
-import CardLink from '../../../../../components/common/Cards/CardLink/index.vue'
+import CardLink from '../../../../components/common/Cards/CardLink/index.vue'
 
 const link = {
   id: 2,

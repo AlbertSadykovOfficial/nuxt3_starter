@@ -1,10 +1,6 @@
-// @vitest-environment happy-dom
-// Строка выше устанавливает окружение в котором будут запущены тесты,
-// В данном случае Нужен Happy Dom, чтоб все корректно отработало
-import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
+import { describe, it, expect, mount } from '@/tests/utils/index'
 
-import Button from '../../../../../components/core/Basic/Button/index.vue'
+import Button from '../../../../components/core/Basic/Button/index.vue'
 
 function factory({ props = {}, data = {} }) {
   return mount(Button, {
